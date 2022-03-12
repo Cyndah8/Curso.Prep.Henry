@@ -32,7 +32,7 @@ const nuevoModulo = 21 % 5 === problema3;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return "Devuelve String"
+  return str
 
 }
 
@@ -40,8 +40,6 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var x = 5
-  var y = 8
   return (x + y)
 }
 
@@ -60,15 +58,14 @@ function multiplica(x, y) {
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  var divid = x % y
-  return divid
+  return x % y
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x = y) { return true
+  if (x === y) { return true
     }
     else return false
 }
@@ -77,7 +74,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (str1.length = str2.length) { return true
+    if (str1.length === str2.length) { return true
   }
   else return false
 }
@@ -86,7 +83,6 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  var num = 89
   if (num < 90) { return true
     }
     else return false
@@ -104,16 +100,14 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var resto = x - y * (x % y)
-  return resto
+  return  x - y * (x % y)
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  var restonum = num - 2 * (num % 2)
-  if (restonum === 0) { return true
+  if (num - 2 * (num % 2) === 0) { return true
     }
     else return false
 }
@@ -122,7 +116,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (restonum === 1) { return true
+  if (num - 2 * (num % 2) === 1) { return true
     }
     else return false
 }
@@ -162,7 +156,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random [0, 1]
+  return Math.random (0, 1)
 }
 
 function esPositivo(numero) {
@@ -191,7 +185,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return (nombre +  apellido)
+  return (nombre + " " + apellido)
 
 }
 
@@ -199,7 +193,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ("Hola " +  nombre)
+  return ("Hola " +  nombre + "!")
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -221,8 +215,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-var areaTriangulo = (base * altura) % 2
-return areaTriangulo
+return (base * altura) % 2
 }
 
 
@@ -230,8 +223,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var euroadolar = (euro * 1.20) % 1
-  return eurodolar
+  return (euro * 1.20) % 1
 }
 
 
@@ -241,7 +233,8 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra === a || letra === e || letra === i || letra === o || letra === u) {return "Es vocal"
+  const vocales = ["a", "e", "i", "o", "u"]
+  if (letra === vocales) {return "Es vocal"
 }
 else if (letra.legth > 1) { return "Dato incorrecto"
 
