@@ -58,7 +58,7 @@ function multiplica(x, y) {
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  return x % y
+  return (x % y)
 }
 
 function sonIguales(x, y) {
@@ -100,14 +100,14 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return  x - y * (x % y)
+  return  (x - y * (x % y))
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num - 2 * (num % 2) === 0) { return true
+  if ((num - 2 * (num % 2)) === 0) { return true
     }
     else return false
 }
@@ -116,7 +116,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num - 2 * (num % 2) === 1) { return true
+  if ((num - 2 * (num % 2)) === 1) { return true
     }
     else return false
 }
@@ -215,7 +215,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return (base * altura) % 2
+return ((base * altura) % 2)
 }
 
 
@@ -223,7 +223,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return (euro * 1.20) % 1
+  return ((euro * 1.20) % 1)
 }
 
 
