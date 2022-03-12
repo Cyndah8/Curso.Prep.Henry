@@ -60,7 +60,8 @@ function multiplica(x, y) {
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  return (x % y)
+  var divid = x % y
+  return divid
 }
 
 function sonIguales(x, y) {
@@ -76,9 +77,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  var str1 = "longitud"
-  var str2 = "mismalon"
-  if (str1.length = str2.length) { return true
+    if (str1.length = str2.length) { return true
   }
   else return false
 }
@@ -179,7 +178,6 @@ function esPositivo(numero) {
   }
   else return false
 
-  }
 }
 
 function agregarSimboloExclamacion(str) {
