@@ -15,8 +15,7 @@ const nuevaResta = 10 - problema1 === 5;
 
 
 // Resuelve el siguiente problema matemático:
-var problema2 = (40 % 10)
-const nuevaMultiplicacion = 10 * problema2 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
 var problema3 = (21 % 5)
@@ -58,7 +57,7 @@ function multiplica(x, y) {
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  return (x % y)
+  return (x / y)
 }
 
 function sonIguales(x, y) {
@@ -100,14 +99,14 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return  (x - y * (x % y))
+  return x % y
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ((num - 2 * (num % 2)) === 0) { return true
+  if (num % 2 === 0) { return true
     }
     else return false
 }
@@ -116,7 +115,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ((num - 2 * (num % 2)) === 1) { return true
+  if (num % 2 === 1) { return true
     }
     else return false
 }
@@ -215,7 +214,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return ((base * altura) % 2)
+return ((base * altura) / 2)
 }
 
 
@@ -223,7 +222,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return ((euro * 1.20) % 1)
+  return ((euro * 1.20) / 1)
 }
 
 
@@ -233,8 +232,7 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  const vocales = ["a", "e", "i", "o", "u"]
-  if (letra === vocales) {return "Es vocal"
+    if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {return "Es vocal"
 }
 else if (letra.legth > 1) { return "Dato incorrecto"
 
